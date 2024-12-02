@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Initialize ROM manifest
+repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+
+# Sync the repo with force to ensure a clean sync
+repo sync
+
+# remove device tree
+rm -rf device/oneplus/fajita
+rm -rf device/oneplus/sdm845-common
+rm -rf kernel/oneplus/sdm845
+rm -rf vendor/oneplus/fajita
+rm -rf hardware/oneplus
+
+# cloning device tree
+git clone https://github.com/LineageOS/android_device_oneplus_fajita.git device/oneplus/fajita
+git clone https://github.com/LineageOS/android_device_oneplus_sdm845-common.git device/oneplus/sdm845-common
+
+# cloning kernel tree
+git clone https://github.com/LineageOS/android_kernel_oneplus_sdm845.git kernel/oneplus/sdm845
+
+# cloning vendor tree
+git clone https://github.com/TheMuppets/proprietary_vendor_oneplus_fajita.git vendor/oneplus/fajita
+
+# cloning hardware tree
+git clone https://github.com/LineageOS/android_hardware_oneplus.git hardware/oneplus
+
+# Set up the build environment
+. build/envsetup.sh
+
+# Choose the target device
+breakfast fajita
+
+# Build the ROM (use mka bacon for a full build)
+croot
+brunch fajita
