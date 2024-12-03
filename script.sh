@@ -4,7 +4,7 @@
 repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
 
 # Sync the repo with force to ensure a clean sync
-repo sync
+/opt/crave/resync.sh
 
 # remove device tree
 rm -rf device/oneplus/fajita
@@ -27,11 +27,11 @@ git clone https://github.com/TheMuppets/proprietary_vendor_oneplus_fajita.git ve
 git clone https://github.com/LineageOS/android_hardware_oneplus.git hardware/oneplus
 
 # Set up the build environment
-. build/envsetup.sh
+source build/envsetup.sh
 
 # Choose the target device
-breakfast fajita
+lunch lineage_fajita-userdebug
 
 # Build the ROM (use mka bacon for a full build)
-croot
-brunch fajita
+make installclean
+mka bacon
