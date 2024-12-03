@@ -22,6 +22,7 @@ git clone https://github.com/LineageOS/android_kernel_oneplus_sdm845.git kernel/
 
 # cloning vendor tree
 git clone https://github.com/TheMuppets/proprietary_vendor_oneplus_fajita.git vendor/oneplus/fajita
+git clone https://github.com/TheMuppets/proprietary_vendor_oneplus_sdm845-common.git vendor/oneplus/sdm845-common
 
 # cloning hardware tree
 git clone https://github.com/LineageOS/android_hardware_oneplus.git hardware/oneplus
