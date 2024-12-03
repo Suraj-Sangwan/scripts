@@ -30,7 +30,7 @@ git clone https://github.com/LineageOS/android_hardware_oneplus.git hardware/one
 source build/envsetup.sh
 
 # Choose the target device
-lunch lineage_fajita-userdebug
+lunch lineage_fajita-ap2a-userdebug
 
 # Build the ROM (use mka bacon for a full build)
 make installclean
