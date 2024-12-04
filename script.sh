@@ -21,6 +21,8 @@ git clone https://github.com/TheMuppets/proprietary_vendor_oneplus_sdm845-common
 git clone https://github.com/LineageOS/android_hardware_oneplus.git hardware/oneplus
 # Set up the build environment
 source build/envsetup.sh
+export TARGET_RELEASE=ap2a
+export ALLOW_MISSING_DEPENDENCIES=true
 # Choose the target device
 lunch lineage_fajita-ap2a-userdebug
 # Build the ROM (use mka bacon for a full build)
