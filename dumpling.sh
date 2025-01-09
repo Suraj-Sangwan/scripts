@@ -27,7 +27,7 @@ repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 echo "============SYNC DONE================"
 # Set up the build environment
 source build/envsetup.sh
-export TARGET_RELEASE=ap2a
+export TARGET_RELEASE=ap4a
 export ALLOW_MISSING_DEPENDENCIES=true
 echo "====== Envsetup Done ======="
 # Choose the target device
