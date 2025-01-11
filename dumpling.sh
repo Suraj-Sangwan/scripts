@@ -27,12 +27,10 @@ repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 echo "============SYNC DONE================"
 # Set up the build environment
 source build/envsetup.sh
-export TARGET_RELEASE=ap4a
 export ALLOW_MISSING_DEPENDENCIES=true
 echo "====== Envsetup Done ======="
 # Choose the target device
 riseup dumpling userdebug
-mka installclean
 echo "======LUNCH DONE======="
 # Build the ROM (use mka bacon for a full build)
 rise b
