@@ -28,6 +28,7 @@ echo "============SYNC DONE================"
 # Set up the build environment
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
+export SELINUX_IGNORE_NEVERALLOWS=true
 echo "====== Envsetup Done ======="
 # Choose the target device
 riseup dumpling userdebug
