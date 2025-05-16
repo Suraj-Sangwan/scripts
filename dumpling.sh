@@ -17,6 +17,8 @@ echo "=================="
 #echo "============================"
 #echo "Local manifest clone success"
 #echo "============================"
+#clone kernelsu
+git clone https://github.com/KernelSU-Next/KernelSU-Next --depth 1 -b next kernel/oneplus/msm8998/KernelSU-Next
 # Sync the repositories
 if [ -f /opt/crave/resync.sh ]; then
   /opt/crave/resync.sh
