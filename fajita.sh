@@ -13,7 +13,7 @@ echo "=================="
 echo "Repo init success"
 echo "=================="
 # Clone local_manifests repository
-git clone https://github.com/Suraj-Sangwan/local_manifests --depth 1 -b main .repo/local_manifests
+git clone https://github.com/Suraj-Sangwan/local_manifests --depth 1 -b fajita .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
