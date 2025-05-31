@@ -34,7 +34,7 @@ echo "====== Envsetup Done ======="
 #croot && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
 #cd vendor/evolution-priv/keys
 #./keys.sh
-croot
+#croot
 # Choose the target device
 lunch lineage_fajita-bp1a-userdebug
 echo "======LUNCH DONE======="
