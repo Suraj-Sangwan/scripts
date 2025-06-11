@@ -30,11 +30,11 @@ echo "============SYNC DONE================"
 export ALLOW_MISSING_DEPENDENCIES=true
 export SELINUX_IGNORE_NEVERALLOWS=true
 echo "====== Envsetup Done ======="
-#Signing of build dependencies 
-#croot && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
-#cd vendor/evolution-priv/keys
-#./keys.sh
-#croot
+Signing of build dependencies 
+croot && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+cd vendor/evolution-priv/keys
+./keys.sh
+croot
 # Choose the target device
 lunch lineage_fajita-bp1a-userdebug
 echo "======LUNCH DONE======="
