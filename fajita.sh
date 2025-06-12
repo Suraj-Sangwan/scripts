@@ -39,4 +39,5 @@ croot
 lunch lineage_fajita-bp1a-userdebug
 echo "======LUNCH DONE======="
 # Build the ROM (use mka bacon for a full build)
+make installclean
 m evolution
